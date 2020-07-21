@@ -11,26 +11,24 @@ function Home() {
 
     let grid = IMGS.map((img, i) => {
         return (
-            <Row id="row">
-                <Col>
+            <Row id="row" key={i}>
+                <Col id="left-col">
                     <img src={img[0]} />
                 </Col>
                 <Col>
-                    <img src={img[1]} />
+                    <img src={img[1]} id="center-img"/>
                 </Col>
-                <Col>
-                    <img src={img[2]} />
+                <Col id="right-col">
+                    <img src={img[2]} id="right-img"/>
                 </Col>
             </Row>
         )
     })
 
     return (
-        <div>
-            <Container fluid>
-                {grid}
-            </Container>
-        </div>
+        <Container fluid>
+            {grid}
+        </Container>
     )
 }
 
