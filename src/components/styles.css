@@ -1,0 +1,18 @@
+html body {
+    background: rgb(31, 31, 31);
+}
+
+#app {
+    font-family: 'Source Sans Pro';
+    color: rgb(228, 228, 228);
+    width: 54vw;
+    padding-left: 23vw;
+}
+
+#header {
+    padding-top: 10vh;
+}
+
+#title {
+    font-size: 32px;
+}
