@@ -6,13 +6,18 @@ html body {
     font-family: 'Source Sans Pro';
     color: rgb(228, 228, 228);
     width: 54vw;
-    padding-left: 23vw;
+    margin-left: 23vw;
 }
 
 #header {
     padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 #title {
     font-size: 32px;
+}
+
+#row {
+    padding-bottom: 40px;
 }
