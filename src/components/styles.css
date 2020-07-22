@@ -26,13 +26,59 @@ html body {
     padding-left: 0px;
 }
 
+#card-desc {
+    position: absolute;
+    text-align: center;
+    width: 290px;
+    top: 50px;
+    opacity: 0;
+    transition: 0.3s all ease;
+    font-family: 'Inconsolata';
+}
+
+#left-img {
+    transition: 0.3s all ease;
+    position: relative;
+    z-index: 100;
+}
+
+#left-img:hover {
+    opacity: 0.2;
+}
+
+#left-img:hover + #card-desc {
+    opacity: 1;
+}
+
 #center-img {
     display: block;
     margin: 0 auto;
+    transition: 0.3s all ease;
+    position: relative;
+    z-index: 100;
+}
+
+#center-img:hover {
+    opacity: 0.2;
+}
+
+#center-img:hover + #card-desc {
+    opacity: 1;
 }
 
 #right-img {
     float: right;
+    transition: 0.3s all ease;
+    position: relative;
+    z-index: 100;
+}
+
+#right-img:hover {
+    opacity: 0.2;
+}
+
+#right-img:hover + #card-desc {
+    opacity: 1;
 }
 
 #right-col {
@@ -40,8 +86,8 @@ html body {
 }
 
 #card-title {
-    font-size: 18px;
-    font-family: 'Roboto';
+    font-size: 14px;
+    font-family: 'Roboto Mono';
     padding-top: 5px;
 }
 
