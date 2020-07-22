@@ -1,5 +1,5 @@
 html body {
-    background: rgb(31, 31, 31);
+    background: rgb(24, 26, 27);
 }
 
 #app {
@@ -10,7 +10,7 @@ html body {
 }
 
 #header {
-    padding-top: 5vh;
+    padding-top: 3vh;
     padding-bottom: 10vh;
 }
 
@@ -37,4 +37,18 @@ html body {
 
 #right-col {
     padding-right: 0px;
+}
+
+#card-title {
+    font-size: 18px;
+    font-family: 'Roboto';
+    padding-top: 5px;
+}
+
+#card-title-text-mid {
+    padding-left: 6px;
+}
+
+#card-title-text-right {
+    padding-left: 15px;
 }
