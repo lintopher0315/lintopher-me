@@ -2,9 +2,9 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const IMGS = [
-    ["https://picsum.photos/300/200", "https://picsum.photos/300/200", "https://picsum.photos/300/200"],
-    ["https://picsum.photos/300/200", "https://picsum.photos/300/200", "https://picsum.photos/300/200"],
-    ["https://picsum.photos/300/200", null, null],
+    ["autobeats_img.png", "chessview_img.png", "gozero_img.png"],
+    ["seashell_img.png", "betterbnb_img.png", "imageworks_img.png"],
+    ["quickmath_img.png", null, null],
 ]
 
 const TITLES = [
@@ -25,7 +25,7 @@ function Home() {
         return (
             <Row id="row" key={i}>
                 <Col id="left-col">
-                    <img src={img[0]} id="left-img"/>
+                    {img[0]!==null ? <img src={require(`./../res/${img[0]}`)} id="left-img"/> : <div></div>}
                     <div id="card-desc" style={{paddingLeft: '3px'}}>
                         {DESCS[i][0]}
                     </div>
@@ -34,7 +34,7 @@ function Home() {
                     </div>
                 </Col>
                 <Col>
-                    <img src={img[1]} id="center-img"/>
+                    {img[1]!==null ? <img src={require(`./../res/${img[1]}`)} id="center-img"/> : <div></div>}
                     <div id="card-desc" style={{paddingLeft: '12px'}}>
                         {DESCS[i][1]}
                     </div>
@@ -43,7 +43,7 @@ function Home() {
                     </div>
                 </Col>
                 <Col id="right-col">
-                    <img src={img[2]} id="right-img"/>
+                    {img[2]!==null ? <img src={require(`./../res/${img[2]}`)} id="right-img"/> : <div></div>}
                     <div id="card-desc" style={{paddingLeft: '24px'}}>
                         {DESCS[i][2]}
                     </div>
