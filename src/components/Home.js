@@ -24,7 +24,7 @@ function Home() {
     let grid = IMGS.map((img, i) => {
         return (
             <Row id="row" key={i}>
-                <Col id="left-col">
+                <Col id="left-col" xs={12} sm={12} md={4}>
                     {img[0]!==null ? <img src={require(`./../res/${img[0]}`)} id="left-img"/> : <div></div>}
                     <div id="card-desc" style={{paddingLeft: '3px'}}>
                         {DESCS[i][0]}
@@ -33,7 +33,7 @@ function Home() {
                         <p>{TITLES[i][0]}</p>
                     </div>
                 </Col>
-                <Col>
+                <Col xs={12} sm={12} md={4}>
                     {img[1]!==null ? <img src={require(`./../res/${img[1]}`)} id="center-img"/> : <div></div>}
                     <div id="card-desc" style={{paddingLeft: '12px'}}>
                         {DESCS[i][1]}
@@ -42,7 +42,7 @@ function Home() {
                         <p id="card-title-text-mid">{TITLES[i][1]}</p>
                     </div>
                 </Col>
-                <Col id="right-col">
+                <Col id="right-col" xs={12} sm={12} md={4}>
                     {img[2]!==null ? <img src={require(`./../res/${img[2]}`)} id="right-img"/> : <div></div>}
                     <div id="card-desc" style={{paddingLeft: '24px'}}>
                         {DESCS[i][2]}
@@ -56,9 +56,11 @@ function Home() {
     })
 
     return (
-        <Container fluid>
-            {grid}
-        </Container>
+        <div>
+            <Container fluid>
+                {grid}
+            </Container>
+        </div>
     )
 }
 
