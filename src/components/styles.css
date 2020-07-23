@@ -115,11 +115,21 @@ html body {
     padding: 10px;
 }
 
+#footer-link:active, #footer-link:focus {
+    outline: none;
+}
+
 #footer-icon {
     width: 25px;
     height: auto;
     -webkit-filter: invert(85%);
     filter: invert(85%);
+    transition: 0.3s all ease;
+}
+
+#footer-icon:hover {
+    -webkit-filter: invert(40%);
+    filter: invert(40%);
 }
 
 #footer-text-container {

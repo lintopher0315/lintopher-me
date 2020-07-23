@@ -5,16 +5,24 @@ function Footer() {
         <div id="footer">
             <div id="icon-container">
                 <div id="footer-div">
-                    <img src={require("./../res/github.svg")} alt="1" id="footer-icon" />
+                    <a href="https://github.com/lintopher0315" target="_blank" id="footer-link">
+                        <img src={require("./../res/github.svg")} alt="1" id="footer-icon" />
+                    </a>
                 </div>
                 <div id="footer-div">
-                    <img src={require("./../res/mail.svg")} alt="1" id="footer-icon" />
+                    <a href="mailto: lintopher@gmail.com" target="_blank" id="footer-link">
+                        <img src={require("./../res/mail.svg")} alt="1" id="footer-icon" />
+                    </a>
                 </div>
                 <div id="footer-div">
-                    <img src={require("./../res/linkedin.svg")} alt="1" id="footer-icon" />
+                    <a href="https://www.linkedin.com/in/christopher-lin-98146913b/" target="_blank" id="footer-link">
+                        <img src={require("./../res/linkedin.svg")} alt="1" id="footer-icon" />
+                    </a>
                 </div>
                 <div id="footer-div">
-                    <img src={require("./../res/leetcode.svg")} alt="1" id="footer-icon" />
+                    <a href="https://leetcode.com/physics_alpaca/" target="_blank" id="footer-link">
+                        <img src={require("./../res/leetcode.svg")} alt="1" id="footer-icon" />
+                    </a>
                 </div>
             </div>
             <div id="footer-text-container">
