@@ -146,3 +146,9 @@ html body {
 #copyright-text {
     font-size: 14px;
 }
+
+#notfound {
+    font-family: 'Roboto Mono';
+    font-size: 48px;
+    text-align: center;
+}
