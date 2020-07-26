@@ -34,7 +34,14 @@ function Project(props) {
                 <img src={require("./../res/github.svg")} alt="1" id="repo-icon" />
                 {SITES[props.pr]!==null ? <img style={{marginLeft: '15px'}} src={require("./../res/web.svg")} alt="1" id="repo-icon" /> : <div></div>}
             </div>
-            <p id="section-title">Code Preview</p>
+            <div style={{paddingTop: '30px', paddingBottom: '30px'}}>
+                <div id="repo-contents"><a href="#repo-summary" id="section-link" style={{color: 'pink'}}>&#187; Summary</a></div>
+                <div id="repo-contents"><a href="#repo-images" id="section-link" style={{color: 'pink'}}>&#187; Images</a></div>
+                <div id="repo-contents"><a href="#repo-preview" id="section-link" style={{color: 'pink'}}>&#187; Code Preview</a></div>
+            </div>
+            <p id="repo-summary"><a href="#repo-summary" id="section-link">#</a>Summary</p>
+            <p id="repo-images"><a href="#repo-images" id="section-link">#</a>Images</p>
+            <p id="repo-preview"><a href="#repo-preview" id="section-link">#</a>Code Preview</p>
             <div id="repo-gist">
                 {snippets}
             </div>

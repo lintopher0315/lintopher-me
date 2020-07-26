@@ -164,7 +164,9 @@ html body {
     filter: invert(1);
 }
 
-#section-title {
+#repo-summary,
+#repo-images,
+#repo-preview {
     font-family: 'Roboto Mono';
     font-size: 24px;
     font-weight: bold;
@@ -175,4 +177,20 @@ html body {
     height: auto;
     filter: invert(66%) sepia(59%) saturate(205%) hue-rotate(303deg) brightness(110%) contrast(104%); 
     -webkit-filter: invert(66%) sepia(59%) saturate(205%) hue-rotate(303deg) brightness(110%) contrast(104%); 
+}
+
+#repo-contents {
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    color: pink;
+    width: max-content;
+    transition: 0.2s all ease;
+}
+
+#repo-contents:hover {
+    opacity: 0.5;
+}
+
+#section-link:hover {
+    text-decoration: none;
 }
