@@ -19,7 +19,9 @@ function Project(props) {
             <div id="repo-title">
                 {REPOS[props.pr]}
             </div>
-            <Gist id={GISTS[props.pr][0]} file={GISTS[props.pr][1]} />
+            <div id="repo-gist">
+                <Gist id={GISTS[props.pr][0]} file={GISTS[props.pr][1]} />
+            </div>
         </div>
     )
 }

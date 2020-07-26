@@ -158,3 +158,8 @@ html body {
     font-size: 28px;
     color: pink;
 }
+
+#repo-gist {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
