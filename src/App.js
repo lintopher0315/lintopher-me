@@ -11,7 +11,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 const PROJECTS = [
-  "autobeats", "chessview", "gozero", "seashell", "betterbnb", "imageworks", "quickmath"
+  "autobeats", "chessview", "gozero", "seashell", "betterbnb", "imageworks", "quickmath", "cses",
 ]
 
 function App() {
