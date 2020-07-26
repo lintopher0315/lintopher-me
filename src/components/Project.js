@@ -13,6 +13,10 @@ const GISTS = [
     ['5eaa0df37c30dcb4f810f7bf7427ce4f', 'QuizPage.js'], ['df5a36f097e6dbad7e4d1f2a052aa94a', 'removal_game.cpp', 'room_allocation.cpp', 'round_trip.cpp'],
 ]
 
+const SITES = [
+    'https://www.autobeats.io/', null, null, null, null, null, 'http://www.quickmath.space/',
+]
+
 function Project(props) {
 
     let snippets = GISTS[props.pr].slice(1).map((gist, i) => {
@@ -26,6 +30,11 @@ function Project(props) {
             <div id="repo-title">
                 {REPOS[props.pr]}
             </div>
+            <div>
+                <img src={require("./../res/github.svg")} alt="1" id="repo-icon" />
+                {SITES[props.pr]!==null ? <img style={{marginLeft: '15px'}} src={require("./../res/web.svg")} alt="1" id="repo-icon" /> : <div></div>}
+            </div>
+            <p id="section-title">Code Preview</p>
             <div id="repo-gist">
                 {snippets}
             </div>
