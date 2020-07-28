@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const IMGS = [
     ["autobeats_img.png", "chessview_img.png", "gozero_img.png"],
@@ -13,11 +14,11 @@ const MISC_IMGS = [
 
 const TITLES = [
     ["Spotify Browser Player/Visualizer", "CLI for Chess Analysis", "RL Bot for Go"],
-    ["Basic Shell Implementaion", "BnB Application/Extension", "Digital Image Processing"],
+    ["Basic Shell Implementation", "BnB Application/Extension", "Digital Image Processing"],
     ["Simple Arithmetic Practice Site", null, null],
 ]
 
-const MISC_TITILES = [
+const MISC_TITLES = [
     ["CSES Problem Set", null, null],
 ]
 
@@ -42,7 +43,7 @@ function Home() {
                         {DESCS[i][0]}
                     </div>
                     <div id="card-title">
-                        <p>{TITLES[i][0]}</p>
+                        <p><Link id="card-link" to={IMGS[i][0].substring(0, IMGS[i][0].indexOf("_"))}>{TITLES[i][0]}</Link></p>
                     </div>
                 </Col>
                 <Col xs={12} sm={12} md={4}>
@@ -51,7 +52,7 @@ function Home() {
                         {DESCS[i][1]}
                     </div>
                     <div id="card-title">
-                        <p id="card-title-text-mid">{TITLES[i][1]}</p>
+                        <p id="card-title-text-mid">{IMGS[i][1]!==null ? <Link id="card-link" to={IMGS[i][1].substring(0, IMGS[i][1].indexOf("_"))}>{TITLES[i][1]}</Link> : <div></div>}</p>
                     </div>
                 </Col>
                 <Col id="right-col" xs={12} sm={12} md={4}>
@@ -60,7 +61,7 @@ function Home() {
                         {DESCS[i][2]}
                     </div>
                     <div id="card-title">
-                        <p id="card-title-text-right">{TITLES[i][2]}</p>
+                        <p id="card-title-text-right">{IMGS[i][2]!==null ? <Link id="card-link" to={IMGS[i][2].substring(0, IMGS[i][2].indexOf("_"))}>{TITLES[i][2]}</Link> : <div></div>}</p>
                     </div>
                 </Col>
             </Row>
@@ -76,7 +77,7 @@ function Home() {
                         {MISC_DESCS[i][0]}
                     </div>
                     <div id="card-title">
-                        <p>{MISC_TITILES[i][0]}</p>
+                        <p><Link id="card-link" to={MISC_IMGS[i][0].substring(0, MISC_IMGS[i][0].indexOf("_"))}>{MISC_TITLES[i][0]}</Link></p>
                     </div>
                 </Col>
                 <Col xs={12} sm={12} md={4}>
@@ -85,7 +86,7 @@ function Home() {
                         {MISC_DESCS[i][1]}
                     </div>
                     <div id="card-title">
-                        <p id="card-title-text-mid">{MISC_TITILES[i][1]}</p>
+                        <p id="card-title-text-mid">{MISC_IMGS[i][1]!==null ? <Link id="card-link" to={MISC_IMGS[i][1].substring(0, MISC_IMGS[i][1].indexOf("_"))}>{MISC_TITLES[i][1]}</Link> : <div></div>}</p>
                     </div>
                 </Col>
                 <Col id="right-col" xs={12} sm={12} md={4}>
@@ -94,7 +95,7 @@ function Home() {
                         {MISC_DESCS[i][2]}
                     </div>
                     <div id="card-title">
-                        <p id="card-title-text-right">{MISC_TITILES[i][2]}</p>
+                        <p id="card-title-text-right">{MISC_IMGS[i][2]!==null ? <Link id="card-link" to={MISC_IMGS[i][2].substring(0, MISC_IMGS[i][2].indexOf("_"))}>{MISC_TITLES[i][2]}</Link> : <div></div>}</p>
                     </div>
                 </Col>
             </Row>

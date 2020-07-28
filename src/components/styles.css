@@ -92,10 +92,21 @@ html body {
     padding-right: 0px;
 }
 
+#card-link {
+    color: rgb(228, 228, 228);
+    transition: 0.3s all ease;
+}
+
+#card-link:hover {
+    text-decoration: none;
+    opacity: 0.6;
+}
+
 #card-title {
     font-size: 14px;
     font-family: 'Roboto Mono';
     padding-top: 5px;
+    width: max-content;
 }
 
 #card-title-text-mid {
@@ -212,4 +223,18 @@ html body {
     width: 35px;
     height: auto;
     margin-right: 48px;
+    transition: 0.2s all ease;
+}
+
+#about-icon:hover {
+    opacity: 0.5;
+}
+
+#header-link {
+    color: rgb(228, 228, 228);
+}
+
+#header-link:hover {
+    opacity: 0.8;
+    text-decoration: none;
 }

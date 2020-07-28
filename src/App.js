@@ -25,16 +25,16 @@ function App() {
 
   return (
     <div id="app">
-      <Header />
       <BrowserRouter>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          {routes}
-          <Route component={NotFound} />
-        </Switch>
+        <Header />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" component={About} />
+            {routes}
+            <Route component={NotFound} />
+          </Switch>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

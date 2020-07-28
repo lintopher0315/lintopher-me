@@ -1,6 +1,7 @@
 import React from 'react';
 
 function About() {
+
     return (
         <div>
             <div id="about-title">
@@ -17,7 +18,7 @@ function About() {
                 <img src={require("./../res/net.svg")} alt="1" id="about-icon" style={{filter: 'invert(19%) sepia(19%) saturate(7093%) hue-rotate(253deg) brightness(92%) contrast(92%)'}} />
                 <img src={require("./../res/cplusplus.svg")} alt="1" id="about-icon" style={{filter: 'invert(19%) sepia(98%) saturate(2183%) hue-rotate(190deg) brightness(90%) contrast(101%)'}} />
                 <img src={require("./../res/node.svg")} alt="1" id="about-icon" style={{filter: 'invert(42%) sepia(92%) saturate(535%) hue-rotate(74deg) brightness(95%) contrast(74%)'}} />
-                <img src={require("./../res/flask.svg")} alt="1" id="about-icon" style={{filter: 'invert(25%) sepia(97%) saturate(1717%) hue-rotate(340deg) brightness(94%) contrast(98%)'}} />
+                <img src={require("./../res/flask.svg")} alt="1" id="about-icon" style={{filter: 'invert(100%) sepia(1%) saturate(2038%) hue-rotate(83deg) brightness(108%) contrast(101%)'}} />
                 <img src={require("./../res/aws.svg")} alt="1" id="about-icon" style={{filter: 'invert(35%) sepia(16%) saturate(1014%) hue-rotate(174deg) brightness(98%) contrast(92%)'}} />
                 <img src={require("./../res/vim.svg")} alt="1" id="about-icon" style={{filter: 'invert(35%) sepia(90%) saturate(3808%) hue-rotate(130deg) brightness(94%) contrast(99%)'}} />
                 <img src={require("./../res/python.svg")} alt="1" id="about-icon" style={{filter: 'invert(42%) sepia(23%) saturate(1249%) hue-rotate(166deg) brightness(94%) contrast(90%)'}} />
