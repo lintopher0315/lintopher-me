@@ -4,7 +4,7 @@ import Gist from 'react-gist';
 const REPOS = [
     "lintopher0315/autobeats", "lintopher0315/chessview", "lintopher0315/GoZero-MCTS",
     "lintopher0315/seashell", "lintopher0315/betterbnb", "lintopher0315/Imageworks",
-    "lintopher0315/Quick-Math"
+    "lintopher0315/Quick-Math", "lintopher0315/CSES",
 ]
 
 const GISTS = [
@@ -14,7 +14,7 @@ const GISTS = [
 ]
 
 const SITES = [
-    'https://www.autobeats.io/', null, null, null, null, null, 'http://www.quickmath.space/',
+    'https://www.autobeats.io/', null, null, null, null, null, 'http://www.quickmath.space/', null,
 ]
 
 function Project(props) {

@@ -10,6 +10,7 @@ import NotFound from './components/NotFound';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
+import ScrollToTop from './components/ScrollToTop';
 
 const PROJECTS = [
   "autobeats", "chessview", "gozero", "seashell", "betterbnb", "imageworks", "quickmath", "cses",
@@ -26,6 +27,7 @@ function App() {
   return (
     <div id="app">
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
           <Switch>
             <Route path="/" exact component={Home} />
