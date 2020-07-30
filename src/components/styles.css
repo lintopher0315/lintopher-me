@@ -133,7 +133,7 @@ html body {
     padding: 10px;
 }
 
-#footer-link:active, #footer-link:focus {
+#footer-link:active, #footer-link:focus, #github-link:active, #github-link:focus, #site-link:active, #site-link:focus {
     outline: none;
 }
 
@@ -145,7 +145,7 @@ html body {
     transition: 0.3s all ease;
 }
 
-#footer-icon:hover {
+#footer-icon:hover  {
     -webkit-filter: invert(40%);
     filter: invert(40%);
 }
@@ -188,6 +188,11 @@ html body {
     height: auto;
     filter: invert(66%) sepia(59%) saturate(205%) hue-rotate(303deg) brightness(110%) contrast(104%); 
     -webkit-filter: invert(66%) sepia(59%) saturate(205%) hue-rotate(303deg) brightness(110%) contrast(104%); 
+    transition: 0.3s all ease;
+}
+
+#repo-icon:hover {
+    opacity: 0.4;
 }
 
 #repo-contents {

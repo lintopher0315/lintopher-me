@@ -31,8 +31,12 @@ function Project(props) {
                 {REPOS[props.pr]}
             </div>
             <div>
-                <img src={require("./../res/github.svg")} alt="1" id="repo-icon" />
-                {SITES[props.pr]!==null ? <img style={{marginLeft: '15px'}} src={require("./../res/web.svg")} alt="1" id="repo-icon" /> : <div></div>}
+                <a href={`https://www.github.com/${REPOS[props.pr]}`} target="_blank" id="github-link">
+                    <img src={require("./../res/github.svg")} alt="1" id="repo-icon" />
+                </a>
+                <a href={SITES[props.pr]} target="_blank" id="site-link">
+                    {SITES[props.pr]!==null ? <img style={{marginLeft: '15px'}} src={require("./../res/web.svg")} alt="1" id="repo-icon" /> : <div></div>}
+                </a>
             </div>
             <div style={{paddingTop: '30px', paddingBottom: '30px'}}>
                 <div id="repo-contents"><a href="#repo-summary" id="section-link" style={{color: 'pink'}}>&#187; Summary</a></div>
