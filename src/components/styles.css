@@ -181,6 +181,7 @@ html body {
     font-family: 'Roboto Mono';
     font-size: 24px;
     font-weight: bold;
+    padding-top: 30px;
 }
 
 #repo-icon {
@@ -242,4 +243,10 @@ html body {
 #header-link:hover {
     opacity: 0.8;
     text-decoration: none;
+}
+
+#summary {
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    padding-left: 8px;
 }
