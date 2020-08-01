@@ -109,6 +109,9 @@ function Project(props) {
             <p id="repo-summary"><a href="#repo-summary" id="section-link">#</a>Summary</p>
             <p id="summary">{SUMMARIES[props.pr]}</p>
             <p id="repo-images"><a href="#repo-images" id="section-link">#</a>Images</p>
+            <img src={require(`./../res/imgs/example/${REPOS[props.pr].substring(REPOS[props.pr].indexOf('/')+1).toLowerCase()+"_0.png"}`)} id="example-img" alt="" />
+            <img src={require(`./../res/imgs/example/${REPOS[props.pr].substring(REPOS[props.pr].indexOf('/')+1).toLowerCase()+"_1.png"}`)} id="example-img" alt="" />
+            <img src={require(`./../res/imgs/example/${REPOS[props.pr].substring(REPOS[props.pr].indexOf('/')+1).toLowerCase()+"_2.png"}`)} id="example-img" alt="" />
             <p id="repo-preview"><a href="#repo-preview" id="section-link">#</a>Code Preview</p>
             <div id="repo-gist">
                 {snippets}
