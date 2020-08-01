@@ -95,10 +95,10 @@ function Project(props) {
             </div>
             <div>
                 <a href={`https://www.github.com/${REPOS[props.pr]}`} target="_blank" rel="noopener noreferrer" id="github-link">
-                    <img src={require("./../res/github.svg")} alt="1" id="repo-icon" />
+                    <img src={require("./../res/icons/social/github.svg")} alt="1" id="repo-icon" />
                 </a>
                 <a href={SITES[props.pr]} target="_blank" rel="noopener noreferrer" id="site-link">
-                    {SITES[props.pr]!==null ? <img style={{marginLeft: '15px'}} src={require("./../res/web.svg")} alt="1" id="repo-icon" /> : <div></div>}
+                    {SITES[props.pr]!==null ? <img style={{marginLeft: '15px'}} src={require("./../res/icons/social/web.svg")} alt="1" id="repo-icon" /> : <div></div>}
                 </a>
             </div>
             <div style={{paddingTop: '30px', paddingBottom: '30px'}}>
