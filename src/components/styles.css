@@ -240,6 +240,10 @@ html body {
     color: rgb(228, 228, 228);
 }
 
+#header-link:active, #header-link:focus {
+    outline: none;
+}
+
 #header-link:hover {
     opacity: 0.8;
     text-decoration: none;

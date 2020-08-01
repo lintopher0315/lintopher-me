@@ -38,7 +38,7 @@ function Home() {
         return (
             <Row id="row" key={i}>
                 <Col id="left-col" xs={12} sm={12} md={4}>
-                    {img[0]!==null ? <img src={require(`./../res/${img[0]}`)} id="left-img"/> : <div></div>}
+                    {img[0]!==null ? <img src={require(`./../res/${img[0]}`)} id="left-img" alt="" /> : <div></div>}
                     <div id="card-desc" style={{paddingLeft: '3px'}}>
                         {DESCS[i][0]}
                     </div>
@@ -47,7 +47,7 @@ function Home() {
                     </div>
                 </Col>
                 <Col xs={12} sm={12} md={4}>
-                    {img[1]!==null ? <img src={require(`./../res/${img[1]}`)} id="center-img"/> : <div></div>}
+                    {img[1]!==null ? <img src={require(`./../res/${img[1]}`)} id="center-img" alt="" /> : <div></div>}
                     <div id="card-desc" style={{paddingLeft: '12px'}}>
                         {DESCS[i][1]}
                     </div>
@@ -56,7 +56,7 @@ function Home() {
                     </div>
                 </Col>
                 <Col id="right-col" xs={12} sm={12} md={4}>
-                    {img[2]!==null ? <img src={require(`./../res/${img[2]}`)} id="right-img"/> : <div></div>}
+                    {img[2]!==null ? <img src={require(`./../res/${img[2]}`)} id="right-img" alt="" /> : <div></div>}
                     <div id="card-desc" style={{paddingLeft: '24px'}}>
                         {DESCS[i][2]}
                     </div>
@@ -72,7 +72,7 @@ function Home() {
         return (
             <Row id="row" key={i}>
                 <Col id="left-col" xs={12} sm={12} md={4}>
-                    {img[0]!==null ? <img src={require(`./../res/${img[0]}`)} id="left-img"/> : <div></div>}
+                    {img[0]!==null ? <img src={require(`./../res/${img[0]}`)} id="left-img" alt="" /> : <div></div>}
                     <div id="card-desc" style={{paddingLeft: '3px'}}>
                         {MISC_DESCS[i][0]}
                     </div>
@@ -81,7 +81,7 @@ function Home() {
                     </div>
                 </Col>
                 <Col xs={12} sm={12} md={4}>
-                    {img[1]!==null ? <img src={require(`./../res/${img[1]}`)} id="center-img"/> : <div></div>}
+                    {img[1]!==null ? <img src={require(`./../res/${img[1]}`)} id="center-img" alt="" /> : <div></div>}
                     <div id="card-desc" style={{paddingLeft: '12px'}}>
                         {MISC_DESCS[i][1]}
                     </div>
@@ -90,7 +90,7 @@ function Home() {
                     </div>
                 </Col>
                 <Col id="right-col" xs={12} sm={12} md={4}>
-                    {img[2]!==null ? <img src={require(`./../res/${img[2]}`)} id="right-img"/> : <div></div>}
+                    {img[2]!==null ? <img src={require(`./../res/${img[2]}`)} id="right-img" alt="" /> : <div></div>}
                     <div id="card-desc" style={{paddingLeft: '24px'}}>
                         {MISC_DESCS[i][2]}
                     </div>
