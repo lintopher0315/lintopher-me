@@ -39,7 +39,7 @@ function Home() {
             <Row id="row" key={i}>
                 <Col id="left-col" xs={12} sm={12} md={4}>
                     {img[0]!==null ? <img src={require(`./../res/imgs/preview/${img[0]}`)} id="left-img" alt="" /> : <div></div>}
-                    <div id="card-desc" style={{paddingLeft: '3px'}}>
+                    <div id="card-desc">
                         {DESCS[i][0]}
                     </div>
                     <div id="card-title">
@@ -48,7 +48,7 @@ function Home() {
                 </Col>
                 <Col xs={12} sm={12} md={4}>
                     {img[1]!==null ? <img src={require(`./../res/imgs/preview/${img[1]}`)} id="center-img" alt="" /> : <div></div>}
-                    <div id="card-desc" style={{paddingLeft: '12px'}}>
+                    <div id="card-desc">
                         {DESCS[i][1]}
                     </div>
                     <div id="card-title">
@@ -57,7 +57,7 @@ function Home() {
                 </Col>
                 <Col id="right-col" xs={12} sm={12} md={4}>
                     {img[2]!==null ? <img src={require(`./../res/imgs/preview/${img[2]}`)} id="right-img" alt="" /> : <div></div>}
-                    <div id="card-desc" style={{paddingLeft: '24px'}}>
+                    <div id="card-desc">
                         {DESCS[i][2]}
                     </div>
                     <div id="card-title">
@@ -71,9 +71,9 @@ function Home() {
     let misc_grid = MISC_IMGS.map((img, i) => {
         return (
             <Row id="row" key={i}>
-                <Col id="left-col" xs={12} sm={12} md={4}>
+                <Col xs={12} sm={12} md={4}>
                     {img[0]!==null ? <img src={require(`./../res/imgs/preview/${img[0]}`)} id="left-img" alt="" /> : <div></div>}
-                    <div id="card-desc" style={{paddingLeft: '3px'}}>
+                    <div id="card-desc">
                         {MISC_DESCS[i][0]}
                     </div>
                     <div id="card-title">
@@ -82,20 +82,20 @@ function Home() {
                 </Col>
                 <Col xs={12} sm={12} md={4}>
                     {img[1]!==null ? <img src={require(`./../res/imgs/preview/${img[1]}`)} id="center-img" alt="" /> : <div></div>}
-                    <div id="card-desc" style={{paddingLeft: '12px'}}>
+                    <div id="card-desc">
                         {MISC_DESCS[i][1]}
                     </div>
                     <div id="card-title">
-                        <p id="card-title-text-mid">{MISC_IMGS[i][1]!==null ? <Link id="card-link" to={MISC_IMGS[i][1].substring(0, MISC_IMGS[i][1].indexOf("_"))}>{MISC_TITLES[i][1]}</Link> : <div></div>}</p>
+                        <p>{MISC_IMGS[i][1]!==null ? <Link id="card-link" to={MISC_IMGS[i][1].substring(0, MISC_IMGS[i][1].indexOf("_"))}>{MISC_TITLES[i][1]}</Link> : <div></div>}</p>
                     </div>
                 </Col>
-                <Col id="right-col" xs={12} sm={12} md={4}>
+                <Col xs={12} sm={12} md={4}>
                     {img[2]!==null ? <img src={require(`./../res/imgs/preview/${img[2]}`)} id="right-img" alt="" /> : <div></div>}
-                    <div id="card-desc" style={{paddingLeft: '24px'}}>
+                    <div id="card-desc">
                         {MISC_DESCS[i][2]}
                     </div>
                     <div id="card-title">
-                        <p id="card-title-text-right">{MISC_IMGS[i][2]!==null ? <Link id="card-link" to={MISC_IMGS[i][2].substring(0, MISC_IMGS[i][2].indexOf("_"))}>{MISC_TITLES[i][2]}</Link> : <div></div>}</p>
+                        <p>{MISC_IMGS[i][2]!==null ? <Link id="card-link" to={MISC_IMGS[i][2].substring(0, MISC_IMGS[i][2].indexOf("_"))}>{MISC_TITLES[i][2]}</Link> : <div></div>}</p>
                     </div>
                 </Col>
             </Row>
